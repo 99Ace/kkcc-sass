@@ -1,0 +1,119 @@
+@use "sass:math";
+@import "./variables";
+
+@import url('http://fonts.cdnfonts.com/css/arial-rounded-mt-bold');
+@import url('http://fonts.cdnfonts.com/css/lato');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    margin: math.div($base-padding,1.5) 0 ;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: $base-color-1;
+    h1 {
+        color: white;
+        font-size: $base-font-size;
+        margin: 0;
+    }
+    .social-wrapper {
+        font-size: 1.1rem;
+
+        a {
+            color: whitesmoke;
+        }
+    }
+}
+
+nav {
+    padding: $base-padding;
+    background-color: $base-color-2;
+
+    .logo {
+        img {
+            height: 3rem;
+        }
+    }
+}
+
+.hero-image {
+    height: $base-height ;
+    background-image: url(../images/kids_and_kins_childcare_centre.png);
+    background-size: cover;
+    background-position: 35% center;
+}
+
+main,
+section {
+    box-sizing: border-box;
+}
+
+main {
+    padding: $base-padding*2 $base-padding ;
+
+}
+
+#kampung-spirit {
+    position: relative;
+
+    .col-4 {
+        height: math.div($base-height, 3);
+    }
+
+    .bg-setting {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bg-kampung-1 {
+        background-image: url(../images/kampung/bg-kampung-1.png);
+    }
+
+    .bg-kampung-2 {
+        background-image: url(../images/kampung/bg-kampung-2.png);
+    }
+
+    .bg-kampung-3 {
+        background-image: url(../images/kampung/bg-kampung-3.png);
+    }
+
+    .bg-kampung-4 {
+        background-image: url(../images/kampung/bg-kampung-4.png);
+    }
+
+    .callout {
+        font-style: italic;
+        font-size: 0.9* $base-font-size;
+        background-color: rgba($base-color-2, 0.7);
+        color: $base-black;
+        width: 80%;
+        height: 55%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1em 2em;
+        border-radius: $base-border-radius;
+        border: $base-border-thickness solid #ddd;
+        box-shadow: $base-box-shadow;
+
+    }
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    top: 0;
+    left: 0;
+}

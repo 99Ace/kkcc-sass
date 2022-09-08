@@ -1,0 +1,102 @@
+@import url("http://fonts.cdnfonts.com/css/arial-rounded-mt-bold");
+@import url("http://fonts.cdnfonts.com/css/lato");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  margin: 0.6666666667rem 0;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background-color: #1E9B1E;
+}
+header h1 {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+header .social-wrapper {
+  font-size: 1.1rem;
+}
+header .social-wrapper a {
+  color: whitesmoke;
+}
+
+nav {
+  padding: 1rem;
+  background-color: #DCF9CB;
+}
+nav .logo img {
+  height: 3rem;
+}
+
+.hero-image {
+  height: 18rem;
+  background-image: url(../images/kids_and_kins_childcare_centre.png);
+  background-size: cover;
+  background-position: 35% center;
+}
+
+main,
+section {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+#kampung-spirit {
+  position: relative;
+}
+#kampung-spirit .col-4 {
+  height: 6rem;
+}
+#kampung-spirit .bg-setting {
+  background-size: cover;
+  background-position: center;
+}
+#kampung-spirit .bg-kampung-1 {
+  background-image: url(../images/kampung/bg-kampung-1.png);
+}
+#kampung-spirit .bg-kampung-2 {
+  background-image: url(../images/kampung/bg-kampung-2.png);
+}
+#kampung-spirit .bg-kampung-3 {
+  background-image: url(../images/kampung/bg-kampung-3.png);
+}
+#kampung-spirit .bg-kampung-4 {
+  background-image: url(../images/kampung/bg-kampung-4.png);
+}
+#kampung-spirit .callout {
+  font-style: italic;
+  font-size: 0.9rem;
+  background-color: rgba(220, 249, 203, 0.7);
+  color: rgb(48, 48, 48);
+  width: 80%;
+  height: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em 2em;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+}
