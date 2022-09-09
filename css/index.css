@@ -47,6 +47,27 @@ nav {
 nav .navbar-brand img {
   height: 3rem;
 }
+nav .navbar-toggler {
+  border: solid #1E9B1E 2px;
+  /* to remove the box shadow of the collapse button when clicked on */
+}
+nav .navbar-toggler:focus {
+  box-shadow: 1px 3px 5px #1E9B1E;
+}
+nav .navbar-toggler-icon {
+  background-image: url(../images/navbar/bar-nav.png);
+}
+nav .nav-link {
+  color: #1E9B1E;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+nav .nav-link:hover {
+  color: #257025;
+  border-top: solid #1E9B1E;
+  border-bottom: solid #1E9B1E;
+}
 
 main {
   padding: 2rem 1rem;
@@ -139,6 +160,9 @@ main {
   }
   header .social-wrapper {
     font-size: 1.5rem;
+  }
+  nav .nav-link {
+    font-size: 1.15rem;
   }
 }
 @media (min-width: 1200px) {

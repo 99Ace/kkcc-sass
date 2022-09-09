@@ -60,6 +60,30 @@ nav {
             height: 3rem;
         }
     }
+
+    .navbar-toggler {
+        border: solid $base-color-1 $base-border-thickness*2;
+
+        /* to remove the box shadow of the collapse button when clicked on */
+        &:focus {
+            // box-shadow: none;
+            box-shadow:  1px 3px 5px $base-color-1;
+        }
+    }
+    .navbar-toggler-icon {
+        background-image: url(../images/navbar/bar-nav.png);
+    }
+    .nav-link {
+        color: $base-color-1 ;
+        font-weight: 500;
+        font-family: 'Lato', sans-serif;
+        font-size: $base-font-size;
+        &:hover {
+            color: mix($base-color-1, $base-black, 60);
+            border-top: solid $base-color-1;
+            border-bottom: solid $base-color-1;
+        }
+    }
 }
 
 
@@ -175,6 +199,13 @@ main {
 
         .social-wrapper {
             font-size: $base-font-size*1.5 ;
+        }
+    }
+
+    // Navbar
+    nav {
+        .nav-link {
+            font-size: $base-font-size *1.15;
         }
     }
 
