@@ -1,8 +1,19 @@
 @use "sass:math";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 @import "./variables";
 
 @import url('http://fonts.cdnfonts.com/css/arial-rounded-mt-bold');
 @import url('http://fonts.cdnfonts.com/css/lato');
+
+// General setting
+.btn {
+    display: inline-block;
+    padding: math.div($base-padding, 4) math.div($base-padding, 1);
+    border-radius: $base-border-radius;
+    border: solid $base-border-thickness mix($base-color-1, $base-black, 90%);
+    box-shadow: $base-box-shadow;
+}
 
 h1,
 h2,
@@ -11,22 +22,28 @@ h4,
 h5,
 h6 {
     font-family: 'Arial Rounded MT Bold', sans-serif;
-    margin: math.div($base-padding,1.5) 0 ;
+    margin: math.div($base-padding, 1.5) 0;
 }
 
 p {
     font-family: 'Lato', sans-serif;
 }
 
+// Header Setting
 header {
     background-color: $base-color-1;
+    color: white;
+    padding-top: math.div($base-padding, 4);
+    padding-bottom: math.div($base-padding, 4);
+
     h1 {
-        color: white;
+
         font-size: $base-font-size;
         margin: 0;
     }
+
     .social-wrapper {
-        font-size: 1.1rem;
+        font-size: $base-font-size *1.1;
 
         a {
             color: whitesmoke;
@@ -35,61 +52,23 @@ header {
 }
 
 nav {
-    padding: $base-padding;
+    padding: 0;
     background-color: $base-color-2;
 
-    .logo {
+    .navbar-brand {
         img {
             height: 3rem;
         }
     }
 }
 
-.hero-image {
-    height: $base-height ;
-    background-image: url(../images/kids_and_kins_childcare_centre.png);
-    background-size: cover;
-    background-position: 35% center;
-}
 
-main,
-section {
-    box-sizing: border-box;
-}
-
+// Main Section Setting
 main {
     padding: $base-padding*2 $base-padding ;
-
 }
 
 #kampung-spirit {
-    position: relative;
-
-    .col-4 {
-        height: math.div($base-height, 3);
-    }
-
-    .bg-setting {
-        background-size: cover;
-        background-position: center;
-    }
-
-    .bg-kampung-1 {
-        background-image: url(../images/kampung/bg-kampung-1.png);
-    }
-
-    .bg-kampung-2 {
-        background-image: url(../images/kampung/bg-kampung-2.png);
-    }
-
-    .bg-kampung-3 {
-        background-image: url(../images/kampung/bg-kampung-3.png);
-    }
-
-    .bg-kampung-4 {
-        background-image: url(../images/kampung/bg-kampung-4.png);
-    }
-
     .callout {
         font-style: italic;
         font-size: 0.9* $base-font-size;
@@ -109,11 +88,109 @@ main {
     }
 }
 
+.img-banner {
+    .col-4 {
+        height: math.div($base-height, 3);
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.bg-setting {
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-kampung-1 {
+    background-image: url(../images/kampung/bg-kampung-1.png);
+}
+
+.bg-kampung-2 {
+    background-image: url(../images/kampung/bg-kampung-2.png);
+}
+
+.bg-kampung-3 {
+    background-image: url(../images/kampung/bg-kampung-3.png);
+}
+
+.bg-kampung-4 {
+    background-image: url(../images/kampung/bg-kampung-4.png);
+}
+
 .overlay {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0.05);
     top: 0;
     left: 0;
+}
+
+.kampung-banner {
+    height: $base-height ;
+    background-image: url(../images/kampung-v2b-happy-kids-std.png);
+    background-size: cover;
+    background-position: center 100%;
+}
+
+// ============= 7 6 8 PX ==============
+@media (min-width : 768px) {
+    body {
+        background-color: cornflowerblue;
+    }
+
+    // Header Setting
+    header {
+        padding-top: math.div($base-padding, 2);
+        padding-bottom: math.div($base-padding, 2);
+
+        h1 {
+            font-size: $base-font-size*1.1;
+        }
+
+        .social-wrapper {
+            font-size: $base-font-size*1.25 ;
+        }
+    }
+
+    .img-banner {
+        .col-4 {
+            height: math.div($base-height, 2);
+        }
+    }
+}
+
+// ============= 9 9 2 PX ==============
+@media (min-width : 992px) {
+    body {
+        background-color: burlywood;
+    }
+
+    // Header Setting
+    header {
+
+        h1 {
+            font-size: $base-font-size*1.2;
+        }
+
+        .social-wrapper {
+            font-size: $base-font-size*1.5 ;
+        }
+    }
+
+}
+
+// ============= 1 2 0 0 PX ==============
+@media (min-width : 1200px) {
+    body {
+        background-color: rgb(135, 222, 187);
+    }
+
+}
+
+// ============= 1 4 0 0 PX ==============
+@media (min-width : 1400px) {
+    body {
+        background-color: rgb(150, 135, 222);
+    }
 }

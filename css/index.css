@@ -1,5 +1,14 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import url("http://fonts.cdnfonts.com/css/arial-rounded-mt-bold");
 @import url("http://fonts.cdnfonts.com/css/lato");
+.btn {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  border: solid 1px #209020;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 h1,
 h2,
 h3,
@@ -16,9 +25,11 @@ p {
 
 header {
   background-color: #1E9B1E;
+  color: white;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 header h1 {
-  color: white;
   font-size: 1rem;
   margin: 0;
 }
@@ -30,51 +41,17 @@ header .social-wrapper a {
 }
 
 nav {
-  padding: 1rem;
+  padding: 0;
   background-color: #DCF9CB;
 }
-nav .logo img {
+nav .navbar-brand img {
   height: 3rem;
-}
-
-.hero-image {
-  height: 18rem;
-  background-image: url(../images/kids_and_kins_childcare_centre.png);
-  background-size: cover;
-  background-position: 35% center;
-}
-
-main,
-section {
-  box-sizing: border-box;
 }
 
 main {
   padding: 2rem 1rem;
 }
 
-#kampung-spirit {
-  position: relative;
-}
-#kampung-spirit .col-4 {
-  height: 6rem;
-}
-#kampung-spirit .bg-setting {
-  background-size: cover;
-  background-position: center;
-}
-#kampung-spirit .bg-kampung-1 {
-  background-image: url(../images/kampung/bg-kampung-1.png);
-}
-#kampung-spirit .bg-kampung-2 {
-  background-image: url(../images/kampung/bg-kampung-2.png);
-}
-#kampung-spirit .bg-kampung-3 {
-  background-image: url(../images/kampung/bg-kampung-3.png);
-}
-#kampung-spirit .bg-kampung-4 {
-  background-image: url(../images/kampung/bg-kampung-4.png);
-}
 #kampung-spirit .callout {
   font-style: italic;
   font-size: 0.9rem;
@@ -92,11 +69,85 @@ main {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
+.img-banner .col-4 {
+  height: 16.6666666667vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bg-setting {
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-kampung-1 {
+  background-image: url(../images/kampung/bg-kampung-1.png);
+}
+
+.bg-kampung-2 {
+  background-image: url(../images/kampung/bg-kampung-2.png);
+}
+
+.bg-kampung-3 {
+  background-image: url(../images/kampung/bg-kampung-3.png);
+}
+
+.bg-kampung-4 {
+  background-image: url(../images/kampung/bg-kampung-4.png);
+}
+
 .overlay {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.05);
   top: 0;
   left: 0;
+}
+
+.kampung-banner {
+  height: 50vh;
+  background-image: url(../images/kampung-v2b-happy-kids-std.png);
+  background-size: cover;
+  background-position: center 100%;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: cornflowerblue;
+  }
+  header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  header h1 {
+    font-size: 1.1rem;
+  }
+  header .social-wrapper {
+    font-size: 1.25rem;
+  }
+  .img-banner .col-4 {
+    height: 25vh;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    background-color: burlywood;
+  }
+  header h1 {
+    font-size: 1.2rem;
+  }
+  header .social-wrapper {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(135, 222, 187);
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    background-color: rgb(150, 135, 222);
+  }
 }
