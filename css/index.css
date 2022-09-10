@@ -75,10 +75,13 @@ main {
   padding: 2rem 1rem;
 }
 
-#kampung-spirit {
-  background-color: #9ACD32;
+section {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+#kampung-spirit {
+  background-color: #9ACD32;
 }
 
 .img-banner .col-4 {
@@ -117,6 +120,14 @@ main {
   left: 0;
 }
 
+#book-form input {
+  padding: 4px 16px;
+  background-color: #DCF9CB;
+}
+#book-form textarea {
+  background-color: #DCF9CB;
+}
+
 @media (min-width: 768px) {
   header {
     padding-top: 0.5rem;
@@ -152,6 +163,9 @@ main {
   }
   .img-banner .col-4 {
     height: 28.5714285714vh;
+  }
+  .form-map img {
+    max-height: 62.5vh;
   }
 }
 @media (min-width: 1400px) {

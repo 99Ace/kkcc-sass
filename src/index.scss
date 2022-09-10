@@ -92,11 +92,12 @@ nav {
 main {
     padding: $base-padding*2 $base-padding ;
 }
-
-#kampung-spirit {
-    background-color: $base-color-3;
+section {
     padding-top: $base-padding ;
     padding-bottom: $base-padding;
+}
+#kampung-spirit {
+    background-color: $base-color-3;
 }
 
 .img-banner {
@@ -137,6 +138,16 @@ main {
     left: 0;
 }
 
+// Booking Form
+#book-form {
+    input {
+        padding:  math.div($base-input-padding,2) $base-input-padding*2;
+        background-color: $base-color-2;
+    }
+    textarea {
+        background-color: $base-color-2;
+    }
+}
 
 
 // ============= 7 6 8 PX ==============
@@ -202,6 +213,14 @@ main {
         .col-4 {
             height: math.div($base-height,1.75);
         }
+    }
+
+    // Booking Form Section
+    .form-map {
+        img {
+            max-height: $base-height * 1.25;
+        }
+        
     }
 
 }
