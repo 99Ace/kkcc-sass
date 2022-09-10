@@ -70,17 +70,20 @@ nav {
         /* to remove the box shadow of the collapse button when clicked on */
         &:focus {
             // box-shadow: none;
-            box-shadow:  1px 3px 5px $base-color-1;
+            box-shadow: 1px 3px 5px $base-color-1;
         }
     }
+
     .navbar-toggler-icon {
         background-image: url(../images/navbar/bar-nav.png);
     }
+
     .nav-link {
         color: $base-color-1 ;
         font-weight: 500;
         font-family: 'Lato', sans-serif;
         font-size: $base-font-size;
+
         &:hover {
             color: mix($base-color-1, $base-black, 60);
             border-top: solid $base-color-1;
@@ -94,10 +97,12 @@ nav {
 main {
     padding: $base-padding*2 $base-padding ;
 }
+
 section {
     padding-top: $base-padding ;
     padding-bottom: $base-padding;
 }
+
 #kampung-spirit {
     background-color: $base-color-3;
 }
@@ -131,6 +136,18 @@ section {
     background-image: url(../images/kampung/bg-kampung-4.png);
 }
 
+.bg-testimonial-1 {
+    background-image: url(../images/testimonials/testimonial-1.jpeg);
+}
+
+.bg-testimonial-2 {
+    background-image: url(../images/testimonials/testimonial-2.jpeg);
+}
+
+.bg-testimonial-3 {
+    background-image: url(../images/testimonials/testimonial-3.jpeg);
+}
+
 .overlay {
     position: absolute;
     height: 100%;
@@ -143,15 +160,40 @@ section {
 // Booking Form
 #book-form {
     input {
-        padding:  math.div($base-input-padding,2) $base-input-padding*2;
+        padding: math.div($base-input-padding, 2) $base-input-padding*2;
         background-color: $base-color-2;
     }
+
     textarea {
         background-color: $base-color-2;
     }
 }
 
+// Programmes & Cirriculum 
+#programmes-cirriculum {
+    a {
+        text-decoration: none;
+        color: $base-black;
+    }
+}
 
+#testimonial {
+    .mycard {
+        min-height: fit-content;
+        flex-direction: row;
+
+        .mycard-img {
+            padding: $base-padding;
+
+            .circle {
+                height: 150px;
+                width: 150px;
+                background-color: antiquewhite;
+                border-radius: 50%;
+            }
+        }
+    }
+}
 
 
 // ============= 7 6 8 PX ==============
@@ -173,25 +215,49 @@ section {
             font-size: $base-font-size*1.25 ;
         }
     }
-    .hero-img{
+
+    .hero-img {
         height: 300px;
         overflow: hidden;
     }
+
     .img-banner {
         .col-4 {
             height: math.div($base-height, 2);
         }
     }
+
     // Prog & Cirriculum Section
     #programmes-cirriculum {
+        text-align: center;
+
+        .title-wrapper {
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .row {
             max-width: 1000px;
             margin-left: auto;
             margin-right: auto;
         }
+
         .mycard {
             height: $base-height*1.3;
-            text-align: center;
+        }
+    }
+
+    // Testimonial
+    #testimonial {
+        text-align: center;
+        .mycard {
+            .circle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            height: $base-height * 1.15;
+            flex-direction: column;
         }
     }
 }
@@ -211,12 +277,14 @@ section {
 
         .social-wrapper {
             font-size: $base-font-size*1.5 ;
-        } 
+        }
     }
-    .hero-img{
+
+    .hero-img {
         height: 400px;
         overflow: hidden;
     }
+
     // Navbar
     nav {
         .nav-link {
@@ -227,7 +295,7 @@ section {
     // Kampung Spirit Section
     .img-banner {
         .col-4 {
-            height: math.div($base-height,1.75);
+            height: math.div($base-height, 1.75);
         }
     }
 
@@ -236,12 +304,38 @@ section {
         img {
             max-height: $base-height * 1.25;
         }
-        
+
     }
+
     // Prog & Cirriculum Section
     #programmes-cirriculum {
-        margin-top: $base-margin *2 ;
+        .title-wrapper {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        margin-top: $base-margin *2;
         margin-bottom: $base-margin *2;
+
+        .mycard {
+            height: $base-height*1.3;
+        }
+    }
+    // Testimonial
+    #testimonial {
+       
+        .title-wrapper {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .row {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
     }
 }
 
@@ -250,7 +344,11 @@ section {
     body {
         // background-color: rgb(135, 222, 187);
     }
-
+    #testimonial {
+        .mycard {
+            height: $base-height ;
+        }
+    }
 }
 
 // ============= 1 4 0 0 PX ==============
@@ -258,10 +356,11 @@ section {
     body {
         // background-color: rgb(150, 135, 222);
     }
+
     // Kampung Spirit Section
     .img-banner {
         .col-4 {
-            height: math.div($base-height,1.25);
+            height: math.div($base-height, 1.25);
         }
     }
 }
