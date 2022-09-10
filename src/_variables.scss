@@ -10,7 +10,7 @@ $base-height : 50vh !default;
 
 // spacing
 $base-padding : 1rem !default;
-
+$base-padding-em : 1em !default;
 $base-margin : 1rem !default;
 
 $base-input-padding : 8px !default;
@@ -21,6 +21,10 @@ $base-border-radius: 20px !default;
 
 // box-shadow
 $base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+$base-box-shadow-2: 3px 3px 10px rgba($base-black,1) !default;
 
 // font sizes
 $base-font-size: 1rem !default;
+
+// circle 
+$base-circle-diameter : 10rem !default;

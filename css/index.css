@@ -187,6 +187,82 @@ footer i {
   font-size: 1.5rem;
 }
 
+#about-us .btn {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1em 2em;
+  border-radius: 40px;
+}
+
+#our-teachers .row, #our-partners .row {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 2rem;
+}
+#our-teachers .circle, #our-partners .circle {
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid rgb(48, 48, 48);
+  box-shadow: 3px 3px 10px #303030;
+  border-radius: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.bg-teacher-1 {
+  background-image: url("../images/teachers/teacher-1.png");
+}
+
+.bg-teacher-2 {
+  background-image: url("../images/teachers/teacher-2.png");
+}
+
+.bg-teacher-3 {
+  background-image: url("../images/teachers/teacher-3.png");
+}
+
+.bg-teacher-4 {
+  background-image: url("../images/teachers/teacher-4.png");
+}
+
+.bg-teacher-5 {
+  background-image: url("../images/teachers/teacher-5.png");
+}
+
+.bg-teacher-6 {
+  background-image: url("../images/teachers/teacher-6.png");
+}
+
+.bg-teacher-7 {
+  background-image: url("../images/teachers/teacher-7.png");
+}
+
+.bg-teacher-8 {
+  background-image: url("../images/teachers/teacher-8.png");
+}
+
+.bg-teacher-9 {
+  background-image: url("../images/teachers/teacher-9.png");
+}
+
+.bg-partner-1 {
+  background-image: url("../images/partners/partner-1.png");
+}
+
+.bg-partner-2 {
+  background-image: url("../images/partners/partner-2.png");
+}
+
+.bg-partner-3 {
+  background-image: url("../images/partners/partner-3.png");
+}
+
+.bg-partner-4 {
+  background-image: url("../images/partners/partner-4.png");
+}
+
 @media (min-width: 768px) {
   header {
     padding-top: 0.5rem;
@@ -232,6 +308,12 @@ footer i {
     margin-left: auto;
     margin-right: auto;
   }
+  #our-teachers .title-wrapper, #our-partners .title-wrapper {
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 992px) {
   header h1 {
@@ -274,6 +356,14 @@ footer i {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+  }
+  #our-teachers .title-wrapper, #our-partners .title-wrapper {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #our-teachers .row, #our-partners .row {
+    max-width: 800px;
   }
 }
 @media (min-width: 1200px) {
