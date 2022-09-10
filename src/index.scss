@@ -177,6 +177,7 @@ section {
     }
 }
 
+// Testimonial
 #testimonial {
     .mycard {
         min-height: fit-content;
@@ -192,6 +193,16 @@ section {
                 border-radius: 50%;
             }
         }
+    }
+}
+
+// Footer
+footer {
+    * {
+        color: $base-white;
+    }
+    i {
+        font-size: $base-font-size*1.5;
     }
 }
 
