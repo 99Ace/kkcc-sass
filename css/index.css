@@ -1,6 +1,27 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import url("http://fonts.cdnfonts.com/css/arial-rounded-mt-bold");
 @import url("http://fonts.cdnfonts.com/css/lato");
+.mycard {
+  display: flex;
+  flex-direction: column;
+  min-height: 62.5vh;
+  border: #237b23 solid 2px;
+  border-radius: 20px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.mycard .mycard-img img {
+  width: 100%;
+}
+.mycard .mycard-body {
+  flex: 3;
+  padding: 0.5rem;
+}
+.mycard .mycard-body h5 {
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .btn {
   display: inline-block;
   padding: 0.25rem 1rem;
@@ -146,6 +167,15 @@ section {
   .img-banner .col-4 {
     height: 25vh;
   }
+  #programmes-cirriculum .row {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #programmes-cirriculum .mycard {
+    height: 65vh;
+    text-align: center;
+  }
 }
 @media (min-width: 992px) {
   header h1 {
@@ -166,6 +196,10 @@ section {
   }
   .form-map img {
     max-height: 62.5vh;
+  }
+  #programmes-cirriculum {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 1400px) {

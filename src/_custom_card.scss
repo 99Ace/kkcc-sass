@@ -1,0 +1,30 @@
+.mycard {
+    display: flex;
+    flex-direction: column;
+    min-height: $base-height *1.25;
+    border: mix($base-black,$base-color-1, 30%) solid $base-border-thickness *2;
+    border-radius: $base-border-radius;
+    box-shadow: $base-box-shadow;
+    margin-top: $base-padding;
+    overflow: hidden;
+    .mycard-img {
+        // flex: 2;
+        // background-color: aqua;
+        // overflow: hidden;
+        img {
+            width: 100%;
+        }
+        
+    }
+    .mycard-body {
+        flex: 3;
+        // background-color: burlywood;
+        padding: math.div($base-padding,2);
+        h5 {
+            // &:hover {
+                text-shadow: $base-box-shadow;
+            // }
+        }
+    }
+    
+}

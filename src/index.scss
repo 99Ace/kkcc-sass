@@ -6,6 +6,8 @@
 @import url('http://fonts.cdnfonts.com/css/arial-rounded-mt-bold');
 @import url('http://fonts.cdnfonts.com/css/lato');
 
+@import "./custom_card";
+
 // General setting
 .btn {
     display: inline-block;
@@ -150,6 +152,8 @@ section {
 }
 
 
+
+
 // ============= 7 6 8 PX ==============
 @media (min-width : 768px) {
     body {
@@ -176,6 +180,18 @@ section {
     .img-banner {
         .col-4 {
             height: math.div($base-height, 2);
+        }
+    }
+    // Prog & Cirriculum Section
+    #programmes-cirriculum {
+        .row {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .mycard {
+            height: $base-height*1.3;
+            text-align: center;
         }
     }
 }
@@ -222,7 +238,11 @@ section {
         }
         
     }
-
+    // Prog & Cirriculum Section
+    #programmes-cirriculum {
+        margin-top: $base-margin *2 ;
+        margin-bottom: $base-margin *2;
+    }
 }
 
 // ============= 1 2 0 0 PX ==============
