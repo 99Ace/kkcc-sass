@@ -17,6 +17,7 @@ h5,
 h6 {
   font-family: "Arial Rounded MT Bold", sans-serif;
   margin: 0.6666666667rem 0;
+  color: #1E9B1E;
 }
 
 p {
@@ -25,11 +26,12 @@ p {
 
 header {
   background-color: #1E9B1E;
-  color: white;
+  color: #FFFFFF;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 header h1 {
+  color: #FFFFFF;
   font-size: 1rem;
   margin: 0;
 }
@@ -73,21 +75,10 @@ main {
   padding: 2rem 1rem;
 }
 
-#kampung-spirit .callout {
-  font-style: italic;
-  font-size: 0.9rem;
-  background-color: rgba(220, 249, 203, 0.7);
-  color: rgb(48, 48, 48);
-  width: 80%;
-  height: 55%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1em 2em;
-  border-radius: 20px;
-  border: 1px solid #ddd;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+#kampung-spirit {
+  background-color: #9ACD32;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .img-banner .col-4 {
@@ -126,17 +117,7 @@ main {
   left: 0;
 }
 
-.kampung-banner {
-  height: 50vh;
-  background-image: url(../images/kampung-v2b-happy-kids-std.png);
-  background-size: cover;
-  background-position: center 100%;
-}
-
 @media (min-width: 768px) {
-  body {
-    background-color: cornflowerblue;
-  }
   header {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -147,31 +128,34 @@ main {
   header .social-wrapper {
     font-size: 1.25rem;
   }
+  .hero-img {
+    height: 300px;
+    overflow: hidden;
+  }
   .img-banner .col-4 {
     height: 25vh;
   }
 }
 @media (min-width: 992px) {
-  body {
-    background-color: burlywood;
-  }
   header h1 {
     font-size: 1.2rem;
   }
   header .social-wrapper {
     font-size: 1.5rem;
   }
+  .hero-img {
+    height: 400px;
+    overflow: hidden;
+  }
   nav .nav-link {
     font-size: 1.15rem;
   }
-}
-@media (min-width: 1200px) {
-  body {
-    background-color: rgb(135, 222, 187);
+  .img-banner .col-4 {
+    height: 28.5714285714vh;
   }
 }
 @media (min-width: 1400px) {
-  body {
-    background-color: rgb(150, 135, 222);
+  .img-banner .col-4 {
+    height: 40vh;
   }
 }

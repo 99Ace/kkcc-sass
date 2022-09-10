@@ -23,6 +23,7 @@ h5,
 h6 {
     font-family: 'Arial Rounded MT Bold', sans-serif;
     margin: math.div($base-padding, 1.5) 0;
+    color: $base-color-1;
 }
 
 p {
@@ -32,12 +33,12 @@ p {
 // Header Setting
 header {
     background-color: $base-color-1;
-    color: white;
+    color: $base-white;
     padding-top: math.div($base-padding, 4);
     padding-bottom: math.div($base-padding, 4);
 
     h1 {
-
+        color: $base-white;
         font-size: $base-font-size;
         margin: 0;
     }
@@ -93,23 +94,9 @@ main {
 }
 
 #kampung-spirit {
-    .callout {
-        font-style: italic;
-        font-size: 0.9* $base-font-size;
-        background-color: rgba($base-color-2, 0.7);
-        color: $base-black;
-        width: 80%;
-        height: 55%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 1em 2em;
-        border-radius: $base-border-radius;
-        border: $base-border-thickness solid #ddd;
-        box-shadow: $base-box-shadow;
-
-    }
+    background-color: $base-color-3;
+    padding-top: $base-padding ;
+    padding-bottom: $base-padding;
 }
 
 .img-banner {
@@ -150,17 +137,12 @@ main {
     left: 0;
 }
 
-.kampung-banner {
-    height: $base-height ;
-    background-image: url(../images/kampung-v2b-happy-kids-std.png);
-    background-size: cover;
-    background-position: center 100%;
-}
+
 
 // ============= 7 6 8 PX ==============
 @media (min-width : 768px) {
     body {
-        background-color: cornflowerblue;
+        // background-color: cornflowerblue;
     }
 
     // Header Setting
@@ -176,7 +158,10 @@ main {
             font-size: $base-font-size*1.25 ;
         }
     }
-
+    .hero-img{
+        height: 300px;
+        overflow: hidden;
+    }
     .img-banner {
         .col-4 {
             height: math.div($base-height, 2);
@@ -187,7 +172,7 @@ main {
 // ============= 9 9 2 PX ==============
 @media (min-width : 992px) {
     body {
-        background-color: burlywood;
+        // background-color: burlywood;
     }
 
     // Header Setting
@@ -199,13 +184,23 @@ main {
 
         .social-wrapper {
             font-size: $base-font-size*1.5 ;
-        }
+        } 
     }
-
+    .hero-img{
+        height: 400px;
+        overflow: hidden;
+    }
     // Navbar
     nav {
         .nav-link {
             font-size: $base-font-size *1.15;
+        }
+    }
+
+    // Kampung Spirit Section
+    .img-banner {
+        .col-4 {
+            height: math.div($base-height,1.75);
         }
     }
 
@@ -214,7 +209,7 @@ main {
 // ============= 1 2 0 0 PX ==============
 @media (min-width : 1200px) {
     body {
-        background-color: rgb(135, 222, 187);
+        // background-color: rgb(135, 222, 187);
     }
 
 }
@@ -222,6 +217,12 @@ main {
 // ============= 1 4 0 0 PX ==============
 @media (min-width : 1400px) {
     body {
-        background-color: rgb(150, 135, 222);
+        // background-color: rgb(150, 135, 222);
+    }
+    // Kampung Spirit Section
+    .img-banner {
+        .col-4 {
+            height: math.div($base-height,1.25);
+        }
     }
 }
