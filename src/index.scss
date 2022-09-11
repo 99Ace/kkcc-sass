@@ -216,14 +216,17 @@ footer {
         border-radius: $base-border-radius * 2;
     }
 }
-#our-teachers, #our-partners{
-    
+
+#our-teachers,
+#our-partners {
+
     .row {
         max-width: 80%;
         margin-left: auto;
         margin-right: auto;
         row-gap: $base-padding * 2;
     }
+
     .circle {
         height: $base-circle-diameter;
         width: $base-circle-diameter;
@@ -236,17 +239,71 @@ footer {
     }
 }
 
-
 // generates teachers' bg-image
 @for $i from 1 through 9 {
     .bg-teacher-#{$i} {
-        background-image: url("../images/teachers/teacher-"+ #{$i} +".png");
+        background-image: url("../images/teachers/teacher-" + #{$i} +".png");
     }
 }
+
 // generates partners' bg-image
 @for $i from 1 through 4 {
     .bg-partner-#{$i} {
-        background-image: url("../images/partners/partner-"+ #{$i} +".png");
+        background-image: url("../images/partners/partner-" + #{$i} +".png");
+    }
+}
+
+// ======== P R O G R A M M E S   P A G E ===========
+#mission {
+    
+    ul {
+        li {
+            font-size: $base-font-size * 1.1;
+            font-weight: 500;
+            // color: mix($base-color-1, $base-white, 90%);
+            color: $base-black;
+        }
+    }
+}
+#our-values{
+    .alert {
+        text-align: center;
+        color: $base-color-1;
+        font-size: $base-font-size * 1.5;
+        margin: math.div($base-padding,4);
+    }
+    @each $key, $value in $rainbow {
+        .value-#{$key} {
+            color: mix($base-white,$base-color-1,95%);
+            font-size: $base-font-size * 1.75;
+            background-color : $value;
+            border: $value solid $base-border-thickness *2;
+            box-shadow: $base-box-shadow-2;
+            text-shadow: $base-box-shadow-2;
+            font-weight: 700;
+            display: block;
+            width: fit-content;
+            margin: math.div($base-margin,2) 0;
+        }
+        .text-#{$key} {
+            color: $value;
+        }
+    }
+    .values {
+        color: mix($base-color-1,$base-black,80%);
+        font-size: $base-font-size * 3;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: math.div($base-font-size,2) ;
+    }
+}
+#programmes {
+    .card-border{
+        border: mix($base-black, $base-color-1, 30%) solid $base-border-thickness *2;
+        border-radius: $base-border-radius;
+        box-shadow: $base-box-shadow;
+        overflow: hidden;
+        height: math.div($base-height,4.4) ;
     }
 }
 
@@ -317,12 +374,19 @@ footer {
         }
     }
 
-    #our-teachers, #our-partners {
+    #our-teachers,
+    #our-partners {
         .title-wrapper {
             text-align: center;
             max-width: 80%;
             margin-left: auto;
             margin-right: auto;
+        }
+    }
+    // Programmes
+    #programmes {
+        .card-border{
+            height: math.div($base-height,3) ;
         }
     }
 }
@@ -404,15 +468,28 @@ footer {
         }
 
     }
-    #our-teachers, #our-partners {
+
+    #our-teachers,
+    #our-partners {
         .title-wrapper {
             max-width: 70%;
             margin-left: auto;
             margin-right: auto;
         }
-            .row {
-                max-width: 800px;
-            }
+
+        .row {
+            max-width: 800px;
+        }
+    }
+    // Programmes
+    #programmes {
+        .max-width {
+            max-width: 1000px;
+        }
+        .card-border{
+            height: math.div($base-height,2.5) ;
+        }
+
     }
 }
 
@@ -427,7 +504,7 @@ footer {
             height: $base-height ;
         }
     }
-    
+
 }
 
 // ============= 1 4 0 0 PX ==============
@@ -442,5 +519,5 @@ footer {
             height: math.div($base-height, 1.25);
         }
     }
-    
+
 }

@@ -5,6 +5,22 @@ $base-color-3 : #9ACD32 !default;
 $base-black : rgb(48, 48, 48) !default;
 $base-white : #FFFFFF !default;
 
+$base-violet : rgba(145, 74, 238, 0.63);
+$base-blue : rgba(74, 178, 238, 0.63);
+$base-green : rgba(79, 247, 88, 0.661);
+$base-yellow : rgba(243, 233, 47, 0.824);
+$base-orange : rgba(247, 197, 115, 0.762);
+$base-red : rgba(228, 42, 42, 0.79);
+
+$rainbow : (
+    "red" : $base-red,
+    "yellow" : $base-yellow,
+    "orange" : $base-orange,
+    "green" : $base-green,
+    "blue" : $base-blue,
+    "violet" : $base-violet
+);
+
 // Height control
 $base-height : 50vh !default;
 

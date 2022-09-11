@@ -194,13 +194,15 @@ footer i {
   border-radius: 40px;
 }
 
-#our-teachers .row, #our-partners .row {
+#our-teachers .row,
+#our-partners .row {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
   row-gap: 2rem;
 }
-#our-teachers .circle, #our-partners .circle {
+#our-teachers .circle,
+#our-partners .circle {
   height: 10rem;
   width: 10rem;
   border: 1px solid rgb(48, 48, 48);
@@ -263,6 +265,124 @@ footer i {
   background-image: url("../images/partners/partner-4.png");
 }
 
+#mission ul li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgb(48, 48, 48);
+}
+
+#our-values .alert {
+  text-align: center;
+  color: #1E9B1E;
+  font-size: 1.5rem;
+  margin: 0.25rem;
+}
+#our-values .value-red {
+  color: #f4faf4;
+  font-size: 1.75rem;
+  background-color: rgba(228, 42, 42, 0.79);
+  border: rgba(228, 42, 42, 0.79) solid 2px;
+  box-shadow: 3px 3px 10px #303030;
+  text-shadow: 3px 3px 10px #303030;
+  font-weight: 700;
+  display: block;
+  width: fit-content;
+  margin: 0.5rem 0;
+}
+#our-values .text-red {
+  color: rgba(228, 42, 42, 0.79);
+}
+#our-values .value-yellow {
+  color: #f4faf4;
+  font-size: 1.75rem;
+  background-color: rgba(243, 233, 47, 0.824);
+  border: rgba(243, 233, 47, 0.824) solid 2px;
+  box-shadow: 3px 3px 10px #303030;
+  text-shadow: 3px 3px 10px #303030;
+  font-weight: 700;
+  display: block;
+  width: fit-content;
+  margin: 0.5rem 0;
+}
+#our-values .text-yellow {
+  color: rgba(243, 233, 47, 0.824);
+}
+#our-values .value-orange {
+  color: #f4faf4;
+  font-size: 1.75rem;
+  background-color: rgba(247, 197, 115, 0.762);
+  border: rgba(247, 197, 115, 0.762) solid 2px;
+  box-shadow: 3px 3px 10px #303030;
+  text-shadow: 3px 3px 10px #303030;
+  font-weight: 700;
+  display: block;
+  width: fit-content;
+  margin: 0.5rem 0;
+}
+#our-values .text-orange {
+  color: rgba(247, 197, 115, 0.762);
+}
+#our-values .value-green {
+  color: #f4faf4;
+  font-size: 1.75rem;
+  background-color: rgba(79, 247, 88, 0.661);
+  border: rgba(79, 247, 88, 0.661) solid 2px;
+  box-shadow: 3px 3px 10px #303030;
+  text-shadow: 3px 3px 10px #303030;
+  font-weight: 700;
+  display: block;
+  width: fit-content;
+  margin: 0.5rem 0;
+}
+#our-values .text-green {
+  color: rgba(79, 247, 88, 0.661);
+}
+#our-values .value-blue {
+  color: #f4faf4;
+  font-size: 1.75rem;
+  background-color: rgba(74, 178, 238, 0.63);
+  border: rgba(74, 178, 238, 0.63) solid 2px;
+  box-shadow: 3px 3px 10px #303030;
+  text-shadow: 3px 3px 10px #303030;
+  font-weight: 700;
+  display: block;
+  width: fit-content;
+  margin: 0.5rem 0;
+}
+#our-values .text-blue {
+  color: rgba(74, 178, 238, 0.63);
+}
+#our-values .value-violet {
+  color: #f4faf4;
+  font-size: 1.75rem;
+  background-color: rgba(145, 74, 238, 0.63);
+  border: rgba(145, 74, 238, 0.63) solid 2px;
+  box-shadow: 3px 3px 10px #303030;
+  text-shadow: 3px 3px 10px #303030;
+  font-weight: 700;
+  display: block;
+  width: fit-content;
+  margin: 0.5rem 0;
+}
+#our-values .text-violet {
+  color: rgba(145, 74, 238, 0.63);
+}
+#our-values .values {
+  color: #228622;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+#programmes .card-border {
+  border: #237b23 solid 2px;
+  border-radius: 20px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 11.3636363636vh;
+}
+
 @media (min-width: 768px) {
   header {
     padding-top: 0.5rem;
@@ -308,11 +428,15 @@ footer i {
     margin-left: auto;
     margin-right: auto;
   }
-  #our-teachers .title-wrapper, #our-partners .title-wrapper {
+  #our-teachers .title-wrapper,
+#our-partners .title-wrapper {
     text-align: center;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+  #programmes .card-border {
+    height: 16.6666666667vh;
   }
 }
 @media (min-width: 992px) {
@@ -357,13 +481,21 @@ footer i {
     margin-left: auto;
     margin-right: auto;
   }
-  #our-teachers .title-wrapper, #our-partners .title-wrapper {
+  #our-teachers .title-wrapper,
+#our-partners .title-wrapper {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
-  #our-teachers .row, #our-partners .row {
+  #our-teachers .row,
+#our-partners .row {
     max-width: 800px;
+  }
+  #programmes .max-width {
+    max-width: 1000px;
+  }
+  #programmes .card-border {
+    height: 20vh;
   }
 }
 @media (min-width: 1200px) {
