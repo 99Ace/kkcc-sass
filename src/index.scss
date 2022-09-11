@@ -255,7 +255,7 @@ footer {
 
 // ======== P R O G R A M M E S   P A G E ===========
 #mission {
-    
+
     ul {
         li {
             font-size: $base-font-size * 1.1;
@@ -265,45 +265,59 @@ footer {
         }
     }
 }
-#our-values{
-    .alert {
-        text-align: center;
-        color: $base-color-1;
-        font-size: $base-font-size * 1.5;
-        margin: math.div($base-padding,4);
-    }
-    @each $key, $value in $rainbow {
-        .value-#{$key} {
-            color: mix($base-white,$base-color-1,95%);
-            font-size: $base-font-size * 1.75;
-            background-color : $value;
-            border: $value solid $base-border-thickness *2;
-            box-shadow: $base-box-shadow-2;
-            text-shadow: $base-box-shadow-2;
-            font-weight: 700;
-            display: block;
-            width: fit-content;
-            margin: math.div($base-margin,2) 0;
-        }
-        .text-#{$key} {
-            color: $value;
-        }
-    }
-    .values {
-        color: mix($base-color-1,$base-black,80%);
-        font-size: $base-font-size * 3;
+
+.values {
+    color: mix($base-color-1, $base-black, 80%);
+    font-size: $base-font-size * 3;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: math.div($base-font-size, 2);
+}
+
+@each $key, $value in $rainbow {
+    .value-#{$key} {
+        color: mix($base-white, $base-color-1, 95%);
+        font-size: $base-font-size * 1.75;
+        background-color: $value;
+        border: $value solid $base-border-thickness *2;
+        border-radius: $base-border-radius;
+        box-shadow: $base-box-shadow-2;
+        text-shadow: $base-box-shadow-2;
         font-weight: 700;
+        display: block;
+        width: 60%;
         text-align: center;
-        letter-spacing: math.div($base-font-size,2) ;
+        margin: math.div($base-margin, 2) 0;
+    }
+
+    .text-#{$key} {
+        color: $value;
     }
 }
+
+
 #programmes {
-    .card-border{
+    .card-border {
         border: mix($base-black, $base-color-1, 30%) solid $base-border-thickness *2;
         border-radius: $base-border-radius;
         box-shadow: $base-box-shadow;
         overflow: hidden;
-        height: math.div($base-height,4.4) ;
+        height: math.div($base-height, 4.4);
+    }
+}
+
+// ======== G A L L E R Y   P A G E ===========
+#gallery {
+    .max-width {
+        max-width: 1000px;
+    }
+
+    .card-border {
+        border: mix($base-black, $base-color-1, 30%) solid $base-border-thickness *2;
+        border-radius: $base-border-radius;
+        box-shadow: $base-box-shadow;
+        overflow: hidden;
+        // height: math.div($base-height) ;
     }
 }
 
@@ -328,8 +342,14 @@ footer {
     }
 
     .hero-img {
+
         height: 300px;
         overflow: hidden;
+
+        img {
+            min-width: 100%;
+            max-width: 100%;
+        }
     }
 
     .img-banner {
@@ -383,10 +403,13 @@ footer {
             margin-right: auto;
         }
     }
+    [class|=value] {
+        width: 80%;
+    }
     // Programmes
     #programmes {
-        .card-border{
-            height: math.div($base-height,3) ;
+        .card-border {
+            height: math.div($base-height, 3);
         }
     }
 }
@@ -417,7 +440,13 @@ footer {
     // Navbar
     nav {
         .nav-link {
-            font-size: $base-font-size *1.15;
+            font-size: $base-font-size *1.2;
+            margin-right: $base-margin;
+        }
+        .navbar-brand {
+            img {
+                height: 4rem;
+            }
         }
     }
 
@@ -481,13 +510,24 @@ footer {
             max-width: 800px;
         }
     }
+    #values>span {
+        font-size: $base-font-size * 8;
+    }
+    [class|=value] {
+        margin-bottom: $base-margin * 1.5;
+        font-size: $base-font-size * 2;
+    }
+    .values {
+        font-size: $base-font-size * 4;
+    }
     // Programmes
     #programmes {
         .max-width {
             max-width: 1000px;
         }
-        .card-border{
-            height: math.div($base-height,2.5) ;
+
+        .card-border {
+            height: math.div($base-height, 2.5);
         }
 
     }
@@ -504,7 +544,9 @@ footer {
             height: $base-height ;
         }
     }
-
+    .values {
+        font-size: $base-font-size * 4.5;
+    }
 }
 
 // ============= 1 4 0 0 PX ==============
