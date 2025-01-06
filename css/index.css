@@ -1,6 +1,7 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import url("http://fonts.cdnfonts.com/css/arial-rounded-mt-bold");
 @import url("http://fonts.cdnfonts.com/css/lato");
+
 .mycard {
   display: flex;
   flex-direction: column;
@@ -11,13 +12,16 @@
   margin-top: 1rem;
   overflow: hidden;
 }
+
 .mycard .mycard-img img {
   width: 100%;
 }
+
 .mycard .mycard-body {
   flex: 3;
   padding: 0.5rem;
 }
+
 .mycard .mycard-body h5 {
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -51,14 +55,17 @@ header {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+
 header h1 {
   color: #FFFFFF;
   font-size: 1rem;
   margin: 0;
 }
+
 header .social-wrapper {
   font-size: 1.1rem;
 }
+
 header .social-wrapper a {
   color: whitesmoke;
 }
@@ -67,25 +74,31 @@ nav {
   padding: 0;
   background-color: #DCF9CB;
 }
+
 nav .navbar-brand img {
   height: 3rem;
 }
+
 nav .navbar-toggler {
   border: solid #1E9B1E 2px;
   /* to remove the box shadow of the collapse button when clicked on */
 }
+
 nav .navbar-toggler:focus {
   box-shadow: 1px 3px 5px #1E9B1E;
 }
+
 nav .navbar-toggler-icon {
   background-image: url(../images/navbar/bar-nav.png);
 }
+
 nav .nav-link {
   color: #1E9B1E;
   font-weight: 500;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
 }
+
 nav .nav-link:hover {
   color: #257025;
   border-top: solid #1E9B1E;
@@ -117,19 +130,19 @@ section {
 }
 
 .bg-kampung-1 {
-  background-image: url(../images/kampung/bg-kampung-1.png);
+  background-image: url(../images/kampung/kampung-dream-1-main.png);
 }
 
 .bg-kampung-2 {
-  background-image: url(../images/kampung/bg-kampung-2.png);
+  background-image: url(../images/kampung/kampung-dream-2.png);
 }
 
 .bg-kampung-3 {
-  background-image: url(../images/kampung/bg-kampung-3.png);
+  background-image: url(../images/kampung/kampung-dream-3.png);
 }
 
 .bg-kampung-4 {
-  background-image: url(../images/kampung/bg-kampung-4.png);
+  background-image: url(../images/kampung/kampung-dream-4.png);
 }
 
 .bg-testimonial-1 {
@@ -157,6 +170,7 @@ section {
   padding: 4px 16px;
   background-color: #DCF9CB;
 }
+
 #book-form textarea {
   background-color: #DCF9CB;
 }
@@ -170,9 +184,11 @@ section {
   min-height: fit-content;
   flex-direction: row;
 }
+
 #testimonial .mycard .mycard-img {
   padding: 1rem;
 }
+
 #testimonial .mycard .mycard-img .circle {
   height: 150px;
   width: 150px;
@@ -183,6 +199,7 @@ section {
 footer * {
   color: #FFFFFF;
 }
+
 footer i {
   font-size: 1.5rem;
 }
@@ -201,6 +218,7 @@ footer i {
   margin-right: auto;
   row-gap: 2rem;
 }
+
 #our-teachers .circle,
 #our-partners .circle {
   height: 10rem;
@@ -399,11 +417,38 @@ footer i {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   height: 11.3636363636vh;
+
+  position: relative;
 }
+
+.card-word {
+  font-weight: 700;
+  text-align: center;
+  width: 40%;
+
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.card-img {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+
+.card-img>mg {
+  height: 100%;
+}
+
+
 
 #gallery .max-width {
   max-width: 1000px;
 }
+
 #gallery .card-border {
   border: #237b23 solid 2px;
   border-radius: 20px;
@@ -416,145 +461,182 @@ footer i {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+
   header h1 {
     font-size: 1.1rem;
   }
+
   header .social-wrapper {
     font-size: 1.25rem;
   }
+
   .hero-img {
     height: 300px;
     overflow: hidden;
   }
+
   .hero-img img {
     min-width: 100%;
     max-width: 100%;
   }
+
   .img-banner .col-4 {
     height: 25vh;
   }
+
   #programmes-cirriculum {
     text-align: center;
   }
+
   #programmes-cirriculum .title-wrapper {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+
   #programmes-cirriculum .row {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
+
   #programmes-cirriculum .mycard {
     height: 65vh;
   }
+
   #testimonial {
     text-align: center;
   }
+
   #testimonial .mycard {
     height: 57.5vh;
     flex-direction: column;
   }
+
   #testimonial .mycard .circle {
     margin-left: auto;
     margin-right: auto;
   }
+
   #our-teachers .title-wrapper,
-#our-partners .title-wrapper {
+  #our-partners .title-wrapper {
     text-align: center;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+
   [class|=value] {
     width: 80%;
   }
+
   #programmes .card-border {
     height: 16.6666666667vh;
   }
 }
+
 @media (min-width: 992px) {
   header h1 {
     font-size: 1.2rem;
   }
+
   header .social-wrapper {
     font-size: 1.5rem;
   }
+
   .hero-img {
     height: 400px;
     overflow: hidden;
   }
+
   nav .nav-link {
     font-size: 1.2rem;
     margin-right: 1rem;
   }
+
   nav .navbar-brand img {
     height: 4rem;
   }
+
   .img-banner .col-4 {
     height: 28.5714285714vh;
   }
+
   .form-map img {
     max-height: 62.5vh;
   }
+
   #programmes-cirriculum {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+
   #programmes-cirriculum .title-wrapper {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
+
   #programmes-cirriculum .mycard {
     height: 65vh;
   }
+
   #testimonial .title-wrapper {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
+
   #testimonial .row {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
+
   #our-teachers .title-wrapper,
-#our-partners .title-wrapper {
+  #our-partners .title-wrapper {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
+
   #our-teachers .row,
-#our-partners .row {
+  #our-partners .row {
     max-width: 800px;
   }
-  #values > span {
+
+  #values>span {
     font-size: 8rem;
   }
+
   [class|=value] {
     margin-bottom: 1.5rem;
     font-size: 2rem;
   }
+
   .values {
     font-size: 4rem;
   }
+
   #programmes .max-width {
     max-width: 1000px;
   }
+
   #programmes .card-border {
     height: 20vh;
   }
 }
+
 @media (min-width: 1200px) {
   #testimonial .mycard {
     height: 50vh;
   }
+
   .values {
     font-size: 4.5rem;
   }
 }
+
 @media (min-width: 1400px) {
   .img-banner .col-4 {
     height: 40vh;
